@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    tools:context=".controller.DoctorHomeActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="44dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="40dp"
+        android:elevation="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/listPatients"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_person" />
+
+
+    <Button
+        android:id="@+id/myCalendarBtn"
+        android:layout_width="118dp"
+        android:layout_height="107dp"
+        android:background="@drawable/button_home"
+        android:fontFamily="@font/roboto"
+        android:gravity="bottom|center"
+        android:paddingBottom="8dp"
+        android:text="My Calendar"
+        android:textAllCaps="false"
+        android:textColor="#22BE87"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918" />
+
+    <Button
+        android:id="@+id/signOutBtn"
+        android:layout_width="154dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="4dp"
+        android:background="#C62828"
+        android:text="SignOut"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRequst"
+        android:layout_width="118dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="237dp"
+        android:background="@drawable/button_home"
+        android:fontFamily="@font/roboto"
+        android:gravity="bottom|center"
+        android:paddingBottom="8dp"
+        android:text="Appointement"
+        android:textAllCaps="false"
+        android:textColor="#22BE87"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/signOutBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/appointement"
+        android:layout_width="118dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginBottom="98dp"
+        android:background="@drawable/button_home"
+        android:text=" Patient Request"
+        android:textColor="#22BE87"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto"
+        android:textAllCaps="false"
+        android:gravity="bottom|center"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/signOutBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/listPatients"
+        android:layout_width="118dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="237dp"
+        android:background="@drawable/button_home"
+        android:fontFamily="@font/roboto"
+        android:gravity="bottom|center"
+        android:paddingBottom="8dp"
+        android:text="My Patients"
+        android:textAllCaps="false"
+        android:textColor="#22BE87"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/signOutBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="118dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginBottom="98dp"
+        android:background="@drawable/button_home"
+        android:text="Profile"
+        android:fontFamily="@font/roboto"
+        android:gravity="bottom|center"
+        android:textAllCaps="false"
+        android:paddingBottom="8dp"
+        android:textColor="#22BE87"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/signOutBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="215dp"
+        android:background="@drawable/rectangle_round"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="155dp"
+                android:layout_marginLeft="155dp"
+                android:layout_marginBottom="156dp"
+                android:gravity="center"
+                android:text="Home"
+                android:textColor="#ffffff"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/doctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="106dp"
+                android:layout_marginLeft="106dp"
+                android:layout_marginBottom="79dp"
+                android:text="Welcome Doctor"
+                android:textColor="#ffffff"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="105dp"
+                android:layout_marginLeft="105dp"
+                android:layout_marginBottom="55dp"
+                android:text="How we can help you oday?"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="383dp"
+        android:elevation="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.037"
+        app:srcCompat="@drawable/ic_profile" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRequst"
+        app:layout_constraintEnd_toEndOf="@+id/btnRequst"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/btnRequst"
+        app:layout_constraintTop_toTopOf="@+id/btnRequst"
+        app:layout_constraintVertical_bias="0.403"
+        app:srcCompat="@drawable/ic_appointement" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="62dp"
+        android:layout_height="61dp"
+        android:elevation="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/appointement"
+        app:layout_constraintEnd_toEndOf="@+id/appointement"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="@+id/appointement"
+        app:layout_constraintTop_toTopOf="@+id/appointement"
+        app:layout_constraintVertical_bias="0.347"
+        app:srcCompat="@drawable/ic_request" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="63dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="80dp"
+        android:elevation="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/myCalendarBtn"
+        app:layout_constraintEnd_toEndOf="@+id/myCalendarBtn"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/myCalendarBtn"
+        app:layout_constraintTop_toTopOf="@+id/myCalendarBtn"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_calendar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

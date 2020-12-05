@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_white"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/empty"
+        android:orderInCategory="101"
+        android:title=""
+        android:icon="@drawable/ic_filter_list_black_24dp"
+        app:showAsAction="ifRoom|withText">
+        <menu>
+
+            <item
+                android:id="@+id/option_all"
+                android:title="all"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/option_general"
+                android:title="général"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/option_Dentiste"
+                android:title="Dentiste"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/option_ORL"
+                android:title="ORL"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/option_Ophtalmologue"
+                android:title="Ophtalmologue"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/option_Pédiatre"
+                android:title="Pédiatre"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/option_Radiologue"
+                android:title="Radiologue"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/option_Rhumatologue"
+                android:title="Rhumatologue"
+                app:showAsAction="ifRoom" />
+
+        </menu>
+
+    </item>
+</menu>
